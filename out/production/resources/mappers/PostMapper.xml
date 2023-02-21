@@ -18,7 +18,7 @@
 
 
     <!-- 게시글 저장 -->
-    <insert id="save" parameterType="com.web.library.domain.post.PostMapper">
+    <insert id="save" parameterType="com.web.library.domain.post.PostRequest" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO tb_post (
         <include refid="postColumns" />
         ) VALUES (
@@ -44,7 +44,7 @@
 
 
     <!-- 게시글 수정 -->
-    <update id="update" parameterType="com.web.library.domain.post.PostMapper">
+    <update id="update" parameterType="com.web.library.domain.post.PostRequest">
         UPDATE tb_post
         SET
             modified_date = NOW()
