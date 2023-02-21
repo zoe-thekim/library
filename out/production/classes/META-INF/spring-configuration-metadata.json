@@ -342,11 +342,6 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
-      "name": "spring.datasource.hikari.initialization-fail-fast",
-      "type": "java.lang.Boolean",
-      "sourceType": "com.zaxxer.hikari.HikariConfig"
-    },
-    {
       "name": "spring.datasource.hikari.initialization-fail-timeout",
       "type": "java.lang.Long",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
@@ -435,20 +430,6 @@
       "name": "spring.datasource.hikari.validation-timeout",
       "type": "java.lang.Long",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
-    },
-    {
-      "name": "spring.datasource.hikari.connection-customizer-class-name",
-      "type": "java.lang.String",
-      "sourceType": "com.zaxxer.hikari.HikariConfig",
-      "deprecated": true,
-      "deprecation": {}
-    },
-    {
-      "name": "spring.datasource.hikari.jdbc4-connection-test",
-      "type": "java.lang.Boolean",
-      "sourceType": "com.zaxxer.hikari.HikariConfig",
-      "deprecated": true,
-      "deprecation": {}
     }
   ],
   "hints": []
