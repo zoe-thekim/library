@@ -58,4 +58,10 @@ public class PostController {
         return "redirect:/post/list.do";
     }
 
+    @PostMapping("/post/delete.do")
+    public String deletePost(@RequestParam final Long id) {
+        postService.deletePost(id);
+        return "redirect:/post/list.do";
+    }
+
 }
